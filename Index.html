@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--FAVICON--->
+<link rel="icon" href="images\shopping-cart.png" type="image/png" sizes="16x16"/>
+<!--STYLES-->
+<link rel="stylesheet" href="css\Index.css"/>
+<link rel="stylesheet" href="css\bootstrap.min.css"/>
+<link rel="stylesheet" href="css\all.css"/>
+<!--TITLE-->
+<title>Purchase Form</title>
+</head>
+<body>
+<div class="container-fluid my-2">
+<form>
+<!--NAME-->
+<div id="Name">
+ <label class="label-style">Name</label>
+ <div class="form-row">
+    <div class="col-md-3">
+    <input type="text" class="form-control" id="firstName" aria-describedby="FirstNameHelp" required>
+    <small id="FirstNameHelp" class="form-text text-muted">First</small>
+	</div> &nbsp;
+	<div class="col-md-3">
+	<input type="text" class="form-control" id="lastName" aria-describedby="LastNameHelp" required>
+    <small id="LastNameHelp" class="form-text text-muted">Last</small>
+  </div>
+</div>
+</div>
+<br>
+ <!--EMAIL-->
+<div id="Email" class="form-group">
+    <label class="label-style" for="email">Email</label>
+    <input type="text" class="form-control col-md-6" id="email" required>
+  </div>
+  <!--USER EXPERIENCE-->
+<div id="experience">
+    <label class="label-style">Your Experience</label>
+	<div id="stars">
+    <i class="fas fa-star star-colour"></i>
+    <i class="fas fa-star star-colour"></i>
+	<i class="fas fa-star star-colour"></i>
+	<i class="fas fa-star star-colour"></i>
+	<i class="fas fa-star star-colour"></i>
+	</div>
+	<br>
+	<p>Overall, how would you rate your experience with us?</p>
+</div>
+ <!--USER SATISFACTION-->
+<div class="form-group">
+    <label class="label-style">How satisfied are you with</label>
+    <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Very Unsatisfied</th>
+      <th scope="col">Unsatisfied</th>
+      <th scope="col">Neutral</th>
+	  <th scope="col">Satisfied</th>
+      <th scope="col">Very Satisfied</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Purchase</th>
+      <td><div class="form-check-inline">
+         <input class="form-check-input position-static" type="radio" name="purchaseOption" value="option1" aria-label="poption1" required>
+      </div> 
+	  </td>
+      <td><div class="form-check-inline">
+         <input class="form-check-input position-static" type="radio" name="purchaseOption" value="option2" aria-label="poption2">
+      </div> </td>
+      <td><div class="form-check-inline">
+         <input class="form-check-input position-static" type="radio" name="purchaseOption" value="option3" aria-label="poption3">
+      </div> </td>
+	  <td><div class="form-check-inline">
+         <input class="form-check-input position-static" type="radio" name="purchaseOption" value="option4" aria-label="poption4">
+      </div> </td>
+      <td><div class="form-check-inline">
+         <input class="form-check-input position-static" type="radio" name="purchaseOption" value="option5" aria-label="poption5">
+      </div> </td>
+    </tr>
+    <tr>
+     <th scope="row">Service</th>
+      <td><div class="form-check-inline">
+         <input class="form-check-input position-static" type="radio" name="serviceOption" value="option1" aria-label="soption1" required>
+      </div> 
+	  </td>
+      <td><div class="form-check-inline">
+         <input class="form-check-input position-static" type="radio" name="serviceOption" value="option2" aria-label="soption2">
+      </div> </td>
+      <td><div class="form-check-inline">
+         <input class="form-check-input position-static" type="radio" name="serviceOption" value="option3" aria-label="soption3">
+      </div> </td>
+	  <td><div class="form-check-inline">
+         <input class="form-check-input position-static" type="radio" name="serviceOption" value="option4" aria-label="soption4">
+      </div> </td>
+      <td><div class="form-check-inline">
+         <input class="form-check-input position-static" type="radio" name="serviceOption" value="option5" aria-label="soption5">
+      </div> </td>
+    </tr>
+    <tr>
+      <th scope="row">Company Overall</th>
+       <td><div class="form-check-inline">
+         <input class="form-check-input position-static" type="radio" id="coOption" value="option1" aria-label="coption1" required>
+      </div> 
+	  </td>
+      <td><div class="form-check-inline">
+         <input class="form-check-input position-static" type="radio" id="coOption" value="option2" aria-label="coption2">
+      </div> </td>
+      <td><div class="form-check-inline">
+         <input class="form-check-input position-static" type="radio" id="coOption" value="option3" aria-label="coption3">
+      </div> </td>
+	  <td><div class="form-check-inline">
+         <input class="form-check-input position-static" type="radio" id="coOption" value="option4" aria-label="coption4">
+      </div> </td>
+      <td><div class="form-check-inline">
+         <input class="form-check-input position-static" type="radio" id="coOption" value="option5" aria-label="coption5">
+      </div> </td>
+    </tr>
+  </tbody>
+</table>
+ </div>
+ <!--USER RECOMMENDATION-->
+<div class="form-group">
+    <label class="label-style">How likely are you to</label>
+    <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Very Unlikely</th>
+      <th scope="col">Unlikely</th>
+      <th scope="col">Neutral</th>
+	  <th scope="col">Likely</th>
+      <th scope="col">Very Likely</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Buy from us again</th>
+      <td><div class="form-check-inline">
+         <input class="form-check-input position-static" type="radio" name="bOption" value="option1" aria-label="boption1" required>
+      </div> 
+	  </td>
+      <td><div class="form-check-inline">
+         <input class="form-check-input position-static" type="radio" name="bOption" value="option2" aria-label="boption2">
+      </div> </td>
+      <td><div class="form-check-inline">
+         <input class="form-check-input position-static" type="radio" name="bOption" value="option3" aria-label="boption3">
+      </div> </td>
+	  <td><div class="form-check-inline">
+         <input class="form-check-input position-static" type="radio" name="bOption" value="option4" aria-label="boption4">
+      </div> </td>
+      <td><div class="form-check-inline">
+         <input class="form-check-input position-static" type="radio" name="bOption" value="option5" aria-label="boption5">
+      </div> </td>
+    </tr>
+    <tr>
+     <th scope="row">Recommend our product to others</th>
+      <td><div class="form-check-inline">
+         <input class="form-check-input position-static" type="radio" name="rOption" value="option1" aria-label="roption1" required>
+      </div> 
+	  </td>
+      <td><div class="form-check-inline">
+         <input class="form-check-input position-static" type="radio" name="rOption" value="option2" aria-label="roption2">
+      </div> </td>
+      <td><div class="form-check-inline">
+         <input class="form-check-input position-static" type="radio" name="rOption" value="option3" aria-label="roption3">
+      </div> </td>
+	  <td><div class="form-check-inline">
+         <input class="form-check-input position-static" type="radio" name="rOption" value="option4" aria-label="roption4">
+      </div> </td>
+      <td><div class="form-check-inline">
+         <input class="form-check-input position-static" type="radio" name="rOption" value="option5" aria-label="roption5">
+      </div> </td>
+    </tr>
+    <tr>
+      <th scope="row">Recommend our company to others</th>
+       <td><div class="form-check-inline">
+         <input class="form-check-input position-static" type="radio" name="rcOption" value="option1" aria-label="rcoption1" required>
+      </div> 
+	  </td>
+      <td><div class="form-check-inline">
+         <input class="form-check-input position-static" type="radio" name="rcOption" value="option2" aria-label="rcoption2">
+      </div> </td>
+      <td><div class="form-check-inline">
+         <input class="form-check-input position-static" type="radio" name="rcOption" value="option3" aria-label="rcoption3">
+      </div> </td>
+	  <td><div class="form-check-inline">
+         <input class="form-check-input position-static" type="radio" name="rcOption" value="option4" aria-label="rcoption4">
+      </div> </td>
+      <td><div class="form-check-inline">
+         <input class="form-check-input position-static" type="radio" name="rcOption" value="option5" aria-label="rcoption5">
+      </div> </td>
+    </tr>
+  </tbody>
+</table>
+ </div>
+<!--ADDITIONAL COMMENTS OR SUGGESTIONS-->
+<div class="form-group">
+    <label for="comments" class="font-weight-bold">Additional comments or suggestions</label>
+	<textarea class="form-control" id="comments" rows="4"></textarea>
+  </div>
+<!--BUTTON-->
+  <button id="button" type="Submit" class="btn">Submit</button>
+ </form>
+</div>
+<!--SCRIPTS-->
+<script src="js\bootstrap.min.js"/>
+<script src="js\jquery-3.6.0.min.js"/>
+<script src="js\all.js"/>
+</body>
+</html>
